@@ -1,0 +1,1902 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+
+body{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.right-half{
+    height: 100%;
+}
+
+.dark-mode {
+    background-color: #292929;
+    color: white;
+}
+
+.dark-mode .add-task {
+    color: white;
+}
+
+.btn{
+    cursor: pointer;
+}
+
+a.logo img {
+    width: 175px;
+    height: auto;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+ul.signup-login{
+    float: right;
+    list-style-type: none;
+}
+
+.signup{
+    font-size: 17px;
+    background-color: #3368CE;
+    border:none;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.signup:hover{
+    background-color: #2656b0;
+}
+
+.login{
+    font-size: 17px;
+    border:none;
+    text-align: center;
+    background-color: #e7e7e7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 26px;
+    padding-right: 26px;
+    border-radius: 10px;
+    margin-right: 27px;
+}
+
+.login:hover{
+    background-color:#dedede;
+}
+
+.banner{
+    font-size: 55px;
+    font-weight:650;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 14px;
+}
+
+
+.banner-blue-text{
+    color: #3368CE;
+}
+
+.info{
+    margin-top: 110px;
+    margin-left: 400px;
+    margin-right:400px ;
+    
+}
+
+.landing-page-sentence{
+    text-align: center;
+    margin-top: 0px;
+    padding-bottom: 8px;
+    font-size: 18px;
+}
+
+.read-more-buttons{
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 40px;
+    padding-bottom: 5px;
+}
+
+.btn{
+    background-color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    border-style:solid;
+    border-color: #A0B8E6;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-right: 27px;
+}
+
+.btn:hover{
+    border-color: #2656b0;
+}
+
+#btn-personal-use{
+    border-color:#B8D8C7 ;
+}
+
+#btn-personal-use:hover{
+    border-color:#5d8771 ;
+}
+
+.lightbulb{
+    width: 40px;
+    transform: rotate(330deg);
+    position:relative;
+    bottom: 350px;
+    left: 340px;
+}
+
+.landing-page-person{
+    width: 30%;
+    position: relative;
+    left: 975px;
+    bottom: 330px;
+}
+
+.laptop-image{
+    width: 18%;
+    transform: rotate(21deg);
+    position: relative;
+    top: 110px;
+    left: 25px;
+}
+
+.decor-text{
+    font-family: "Patrick Hand SC", cursive;
+    color: #B8D8C7;
+    font-size: 28px;
+    margin-right: 90%;
+    text-align: center;
+    position: relative;
+    left: 300px;
+    bottom: 20px;
+    transform: rotate(45deg);
+}
+
+
+/* sign up page */
+
+/* Signup/Login header styles */
+.signup-login-header {
+    font-size: 46px;
+    font-weight: bold;
+    margin-bottom: 10px; 
+    text-align: center;
+    position: relative;
+    top: 25px;
+}
+
+.welcome-header{
+    font-size: 46px;
+    font-weight: bold;
+    margin-bottom: 10px; 
+    text-align: center;
+    position: relative;
+    top: 5px;
+}
+
+.account-header{
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+    top: 10px;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.signup-code-header{
+    font-size: 46px;
+    font-weight: bold;
+    margin-bottom: 10px; 
+    text-align: center;
+    position: relative;
+    top: 2px;
+}
+
+
+.signupcode-div {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+label.label-email, .label-password {
+    margin-top: 15px; 
+    color: #828282;
+    position: relative;
+    right: 108px;
+    font-size: 13px;
+}
+
+input[type="email"], [type="password"], [type="name"] , [type="text"]{
+    width: 275px;
+    padding: 10px;
+    margin-bottom: 15px; 
+    border-radius: 5px;
+    border: 3px solid #A0B8E6; 
+    font-size: 14px;
+}
+
+.signup-button {
+    background-color: #3368CE; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 11px; 
+    cursor: pointer;
+    width: 300px; 
+    font-size: 14px;
+}
+
+.signup-button:hover {
+    background-color: #2656b0; 
+}
+
+.continue-button{
+    background-color: #3368CE; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 11px; 
+    cursor: pointer;
+    width: 300px; 
+    font-size: 14px;
+    position: relative;
+    margin: 0;
+    margin-top: 40px;
+}
+
+.continue-button:hover {
+    background-color: #2656b0; 
+}
+
+
+.signup-instruction{
+    width: 280px;
+    position: relative;
+    bottom: 10px;
+}
+
+.signup-txt{
+    color: #828282;
+    font-size: 14px;
+    text-align: center;
+}
+
+input[type="signup_code"] {
+    width: 275px; 
+    padding: 10px;
+    margin-bottom: 15px; 
+    border-radius: 5px;
+    border: 3px solid #A0B8E6;
+    font-size: 14px;
+}
+
+
+.google-signup{
+    border: 3px solid #A0B8E6; 
+    color:#22272E;
+    width: 300px; 
+    margin-bottom: 15px;
+    padding-bottom: 9px; 
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 14px;
+
+}
+
+.apple-signup{
+    border: 3px solid #A0B8E6; 
+    color:#22272E;
+    width: 300px; 
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 14px;
+
+}
+
+
+
+.google-signup2{
+    border: 3px solid #A0B8E6; 
+    color:#22272E;
+    width: 300px; 
+    margin-bottom: 15px;
+    padding-bottom: 9px;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    display: block;
+    position: relative;
+    top: 60px;
+
+}
+
+.apple-signup2{
+    border: 3px solid #A0B8E6;
+    color:#22272E;
+    width: 300px; 
+    margin-bottom: 15px;
+    padding: 10px; 
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    display: block;
+    position: relative;
+    top: 60px;
+
+}
+
+.fa-brands {
+    font-size: 23px;
+    padding-right: 8px;
+}
+
+.fa-google{
+    width: 29px;
+    position: relative;
+    top: 6.5px;
+    padding-right: 4px;
+}
+
+
+.clockimg{
+    width: 90px;
+    position: relative;
+    top: 325px;
+    left: 200px;
+}
+
+.decor-text2{
+    font-family: "Patrick Hand SC", cursive;
+    color: #A0B8E6;
+    font-size: 23px;
+    margin-right: 90%;
+    text-align: center;
+    position: relative;
+    left: 80%;
+    bottom: 10px;
+    transform: rotate(45deg);
+}
+
+.forgotpass{
+   position: relative;
+   top: 40px;
+   left: 70px;
+   padding-top: 50px;
+   text-decoration: none;
+   color: #828282;
+   font-size: 14px;
+}
+
+.forgotpass:hover{
+    color: #535353;
+}
+
+.login-link{
+    position: relative;
+   top: 40px;
+   left: 80px;
+   padding-top: 50px;
+   text-decoration: none;
+   color: #828282;
+   font-size: 14px;
+}
+
+.login-link:hover{
+    color: #535353;
+}
+
+
+/*wlecome page*/
+
+.image-container{
+    text-align: center;
+}
+
+.welcome-img{
+    width: 300px;
+    padding-top: 28px;
+    padding-bottom: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.welcome-p{
+    text-align: center;
+    color: #828282;
+    padding-top: 5px;
+}
+
+.label-name{
+    margin-top: 10px; 
+    color: #828282;
+    position: relative;
+    right: 68px;
+    font-size: 13px;
+}
+
+.password{
+    color: #828282;
+    position: relative;
+    right: 100px;
+    font-size: 13px;
+
+}
+
+
+.fa-eye{
+    color: #828282;
+    position: relative;
+    bottom: 45px;
+    left: 120px;
+}
+
+.fa-eye:hover{
+    color: #A0B8E6;
+}
+
+
+.dartspng{
+    width: 80px;
+    position: relative;
+    bottom: 275px;
+    left: 150px;
+}
+
+
+.listpng{
+    width: 80px;
+    position: relative;
+    bottom: 360px;
+    left: 75%;
+    transform: rotate(45deg);
+}
+
+
+.options-container {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+
+.option:hover{
+    border-color: #A0B8E6;
+}
+
+
+
+.option img {
+    width: 258px;
+    height: 215px;
+    margin-bottom: 10px;
+}
+
+
+
+.subheading{
+    font-size: 15px;
+    color: #828282;
+    text-align: center;
+    margin-left: 10px;
+    margin-left: 10px;
+}
+
+.account-heading{
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+
+}
+
+.option {
+    position: relative; 
+    text-align: center;
+    width: 330px;
+    border: 2px solid #dadada;
+    border-radius: 4px;
+    padding: 20px;
+    position: relative;
+    cursor: pointer;
+    height: 310px;
+    margin-left: 23px;
+    margin-right: 23px;
+}
+
+.option label {
+    position: relative;
+}
+
+
+.fa-regular.fa-circle {
+    position: relative;
+    bottom: 205px; 
+    left: 290px; 
+    font-size: 30px;
+    color: #A0B8E6; 
+}
+
+.option input[type="radio"] {
+    display: none;
+}
+
+
+.fa-circle-check{
+    position: relative;
+    bottom: 205px;
+    left: 290px; 
+    font-size: 30px; 
+    color: #A0B8E6; 
+}
+
+.option.selected {
+    border-color: #A0B8E6;
+}
+
+.side-panel {
+    background-color: white;
+    position: absolute;
+    height: 110vh;
+    width: 270px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9999; 
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3); 
+}
+
+
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    width: 270px;
+    padding-top: 15px;
+}
+
+
+.profile-pic img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; 
+    margin-top: 35px; 
+    margin-left: 17px;
+    position: relative;
+    bottom: 5px;
+}
+
+.name {
+    position: relative;
+    left: 8px;
+    top: 22px;
+    font-size: 14px;
+    color: #22272E;
+}
+
+
+.dashboard{
+    height: 100vh;
+    background-color: white;
+}
+
+.panel-btn-mytasks{
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    right: 63px;
+    font-weight: 350;
+}
+
+.panel-btn-workspace{
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    position: relative;
+    right: 36px;
+    font-weight: 350;
+}
+
+.panel-btn-today {
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: black;
+    margin-top: 30px;
+    position: relative;
+    right: 70px;
+    font-weight: 350;
+}
+
+.panel-btn-important{
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: black;
+    margin-top: 5px;
+    position: relative;
+    right: 63px;
+    font-weight: 350;
+}
+
+.panel-btn-lists{
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    width: 140px;
+    font-size: 17px;
+    color: black;
+    margin-top: 45px;
+    position: relative;
+    right: 20px;
+    font-weight: 350;
+}
+
+.panel-btn-projects{
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    width: 140px;
+    font-size: 17px;
+    color: black;
+    margin-top: 45px;
+    position: relative;
+    font-weight: 350;
+}
+
+.panel-btn-team{
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: black;
+    margin-top: 10px;
+    position: relative;
+    right: 45px;
+    font-weight: 350;
+}
+
+.panel-btn-settings{
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: black;
+    margin-top: 5px;
+    position: relative;
+    right: 68px;
+    font-weight: 350;
+}
+
+
+.fa-gear{
+    padding-right: 15px;
+    font-size: 19px;
+}
+
+.fa-calendar-days {
+    padding-right: 15px;
+    font-size: 19px;
+    padding-top: 10px;
+}
+
+.fa-star{
+    padding-right: 12px;
+    font-size: 19px;
+}
+
+
+.fa-user{
+    padding-right: 12px;
+    font-size: 19px;
+}
+
+.fa-chevron-right{
+    left: 80px;
+    position: relative;
+    bottom: 64px;
+    font-size: 16px;
+}
+
+.fa-plus{
+    font-size: 16px;
+    padding-left: 80px;
+    padding-right: 6px;
+}
+
+
+.team-icon{
+    padding-right: 12px;
+}
+
+
+.fa-people-group{
+    padding-right: 12px;
+    font-size: 19px;
+}
+
+.add-list{
+    position: relative;
+    bottom: 43px;
+    font-size: 16px;
+    padding-left: 80px;
+    padding-right: 6px;
+}
+
+.fa-chevron-right:hover{
+    color: #A0B8E6;
+}
+
+.add-list:hover{
+    color: #A0B8E6;
+}
+
+.user-greeting{
+    position: absolute;
+    left: 345px;
+    top: 49px;
+    font-weight: bold;
+    font-size: 29px;
+    text-align: left;
+}
+
+
+.taks-p{
+    font-size: 16px;
+    color: #A0B8E6;
+    text-align: left;
+    position: relative;
+    left: 345px;
+    top: 110px;
+}
+
+
+.fa-bell{
+    font-size: 19px;
+    position: relative;
+    top: 35px;
+    left: 17px;
+}
+
+
+.fa-message{
+    font-size: 19px;
+}
+
+
+.settings{
+   position: relative;
+   bottom: 45px;
+   left: 3px;
+}
+
+
+/*theme button styling*/
+
+.label-toggle{
+    position: relative;
+    margin-top: 5px;
+    top: 30px;
+    right: 75px;
+    font-size: 25px;
+}
+
+.fa-toggle-off{
+   color: #A0B8E6;
+}
+
+.fa-toggle-on{
+    color: #3368CE;
+ }
+
+.input-toggle{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+
+.toggle-txt{
+    font-size: 14px;
+    padding-left: 10px;
+    position: relative;
+    bottom: 5px;
+}
+
+
+.label-toggle3{
+    position: relative;
+    margin-top: 5px;
+    top: 30px;
+    font-size: 25px;
+    right: 68.5px;
+}
+
+
+.logout{
+    border-radius: 10px;
+    background-color: #3368CE;
+    padding: 5px;
+    border: none;
+    color: white;
+    width: 80px;
+    position: relative;
+    top: 70px;
+    right: 75px;
+}
+
+
+.top-section {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center; 
+}
+
+.message{
+    border: none;
+    background-color: transparent;
+    position: relative;
+    right: 38px;
+}
+
+
+.notifications {
+    border: none;
+    background-color: transparent;
+    position: relative;
+    right: 40px;
+    bottom: 35px;
+}
+
+.notifications:hover{
+    color: #A0B8E6;
+}
+
+.message:hover{
+    color: #A0B8E6;
+}
+
+.date {
+    margin-left: auto; 
+    color: black;
+    font-size: 16px;
+}
+
+
+/* add new list button styling */
+#add-to-list, #drop-down{
+    border: none;
+    background-color: transparent;
+}
+  
+
+.todo-container{
+    position: absolute;
+    left: 350px;
+    top: 180px;
+    color: black;
+    width: 1010px;
+    height: 600px;
+    overflow-y: auto;
+}
+
+
+
+
+.list1{
+    padding-bottom: 30px;
+    height: 600px;
+    overflow-y: auto;
+
+}
+
+.list2{
+    padding-bottom: 30px;
+    height: 600px;
+    position: relative;
+    bottom: 585px;
+    left: 600px;
+    overflow-y: auto;
+}
+
+.add-task{
+    background-color: transparent;
+    border: none;
+    color: #5A5858;
+    outline: none;
+    order: 2;
+    position: relative;
+    left: 100px;
+
+}
+
+
+.add-task:focus{
+    border-bottom-width:2px
+}
+
+.add-task:focus::placeholder{
+    opacity: 0.2;
+}
+
+.add-task form{
+    display: flex ;
+}
+
+.btn-add-task{
+    font-size: 14px;
+    position: relative;
+    right: 80px;
+    top: 20px;
+    border: none;
+    background-color: transparent;
+    color: #828282;
+
+}
+
+.btn-add-task:hover{
+    color: #353535;
+}
+
+.new-tasks{
+    position: relative;
+    right: 170px;
+    bottom: 10px;
+}
+
+.task label{
+    font-weight: 260;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.task label::after{
+   content: "";
+   position: relative;
+   right: 0;
+   left: 0;
+   bottom: -10px;
+   height: 2px;
+   background-color: currentColor;
+}
+
+.task{
+    height: 40px;
+    border-top: none ;
+    border-left: none;
+    border-right: none ;
+}
+
+input.checkbox{
+    width: 17px;
+    height: 17px;
+    accent-color: #A0B8E6;
+}
+
+
+
+/* CSS for the progress popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px rgba(0.2, 0.2, 0.2, 0.2);
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    z-index: 9999;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.progress-option {
+    display: block;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.close-popup {
+    margin-top: 20px;
+}
+
+
+.progress-button {
+    display: block; 
+    background-color: #dadada;
+    border-radius: 5px;
+    font-size: 10px;
+    border: none;
+    margin-bottom: 5px; 
+}
+
+
+.progress-button {
+    position: relative;
+    left: 420px;
+    bottom: 12px ;
+}
+
+.inprogress{
+    background-color:#A0B8E6;
+    color: white;
+}
+
+.notstarted{
+    background-color: #dadada;
+}
+
+.done{
+    background-color: #B8D8C7;
+}
+
+
+
+.error-message{
+    color: #c0193a;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+
+/* SCROLLBAR STYLING */
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.5px;
+}
+
+
+.task-name{
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    margin-top: 28px;
+    color: #353535;
+    font-weight: 600;
+    width: 300px;
+    position: relative;
+    left: 40px;
+}
+
+
+.duedate-btn{
+    position: relative;
+    left: 305px;
+    border-radius: 5px ;
+    background-color: transparent ; 
+    border: none;
+    padding: 4px;
+    width: 70px;
+    white-space: nowrap; 
+    margin-top: 6px;
+    font-size: 13px;
+}
+
+.h-details{
+    margin-top: 5px;
+    position: relative;
+    left: 40px;
+    font-size: 14.5px ;
+    font-weight: 600;
+}
+
+.priority-buttons{
+    position: relative;
+    left: 36px;
+}
+
+.btn-priority{
+    font-size: 14.5px;
+    margin-right: 17px;
+    background-color: transparent;
+    border: none;
+    font-weight: 300;
+    margin-bottom: 28px;
+}
+
+
+
+.high{
+    color: #c0193a;
+    padding-right: 8px;
+    font-size: 12px;
+}
+
+.medium{
+  color: orange;
+  padding-right: 8px;
+  font-size: 12px;
+}
+
+.low{
+    color: #292929;
+    padding-right: 8px;
+}
+
+
+.subtask-h{
+    position: relative;
+    left: 40px;
+}
+
+.subtasks{
+    position: relative;
+    height: 100px;
+    width: 315px;
+    left: 36px;
+    border: #A0B8E6 2px solid;
+    background-color: white;
+    padding: 8px;
+    color: #828282;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    overflow-y: auto;
+    bottom: 5px;
+    font-weight: 300;
+}
+
+.subtask-lbl{
+    font-size: 14px;
+    color: #22272E;
+}
+
+.sub-task{
+    margin-bottom: 6px;
+    accent-color: #A0B8E6;
+}
+
+.delete-task{
+    width: 70px;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 5px;
+    border: none;
+    position: relative;
+    left: 165px;
+    bottom: 6px;
+}
+
+.delete-task:hover{
+    color: #c0193a;
+}
+
+.share-task{
+    position: relative;
+    left: 40px;
+}
+
+.input-share{
+    width: 170px;
+    margin-bottom: 20px;
+    border: #A0B8E6 2px solid;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.search-btn{
+    border: none;
+    background-color: transparent;
+    color: #3368CE;
+}
+
+
+.fa-trash-can{
+    padding-right: 5px;
+}
+
+/**/
+.themeable.theme1{
+    border-color: pink;
+
+}
+
+.task-container {
+    display: flex; 
+    position: relative;
+    width: 1000px;
+    height: 590px;
+    left: 350px;
+    top: 143px;
+}
+
+.status-div {
+    position: relative; 
+    display: flex; 
+    align-items: center; 
+    flex-direction: column; 
+    margin-right: 40px; 
+    overflow-y: auto;
+}
+
+.status-btn {
+    width: 260px;
+    padding: 5px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14.5px;
+    margin-bottom: 22px; 
+}
+
+
+.not-started-btn{
+    background-color: #e7e7e7;
+}
+
+.in-progress-btn{
+    background-color: #3369ce4b;
+}
+
+.done-btn{
+    background-color: #b8d8c792;
+}
+
+
+.status-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    margin-right: 40px;
+    overflow-y: auto;
+}
+
+.task-team {
+    width: 260px;
+    max-width: 260px;
+    max-height: 140px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid rgba(0,0,0,.12);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.04);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    transition-duration: .3s;
+    transition-property: border-color, box-shadow, background-color;
+    user-select: none;
+}
+
+.task-title {
+    font-size: 14.5px;
+    padding-left: 10px; 
+    font-weight: 490;
+    position: relative;
+    bottom: 3px;
+}
+
+.completion-status{
+    font-size: 13.5px;
+    font-weight: 350;
+    margin-left: 20px;
+    opacity: 30;
+    position: relative;
+    right: 12px;
+}
+
+
+.duedate-admin{
+    font-size: 13.5px;
+    font-weight: 350;
+    padding-left: 9px;
+}
+
+
+.assigned-user{
+    width: 33px;
+    position: relative;
+    left: 180px;
+    bottom: 40px;
+}
+
+.add-new-task {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #3369cee6;
+    border: none;
+    position: absolute;
+    left: 1360px;
+    top: 710px;
+    font-size: 33px;
+    color: white;
+}
+
+
+.add-new-task:hover{
+    background-color: #3368CE;
+}
+
+.newtask{
+    position: relative;
+    right: 74px;
+    color: white;
+    font-size: 20px;
+}
+
+.task-popup{
+    height: 625px;
+    width: 710px;
+    box-shadow: 0px 0px 150px 0px #bbbbbb;
+    border-radius: 10px;
+    position: relative;
+    left: 475px;
+    bottom: 525px;
+    display: none;
+    background-color: #f8f8f8;
+    flex-direction: column;
+}
+
+
+.task-popup2{
+    height: 625px;
+    width: 710px;
+    box-shadow: 0px 0px 150px 0px #bbbbbb;
+    border-radius: 10px;
+    position: relative;
+    left: 455px;
+    top: 45px;
+    display: none;
+    background-color: #f8f8f8;
+    flex-direction: column;
+}
+
+
+.task-popup3{
+    height: 625px;
+    width: 710px;
+    box-shadow: 0px 0px 150px 0px #bbbbbb;
+    border-radius: 10px;
+    position: relative;
+    left: 455px;
+    top: 45px;
+    display: none;
+    background-color: #f8f8f8;
+    flex-direction: column;
+}
+
+.admin-task-name{
+    position: relative;
+    left: 25px;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+    margin-top: 28px;
+    color: #353535;
+    font-weight: 600;
+    width: 300px;
+    outline: #a6a6a6;
+}
+
+
+.admin-task-name:focus::placeholder{
+    opacity: 0.2;
+}
+
+.task-popup textarea {
+    width: 376px; 
+    height: 65px; 
+    resize: none; 
+    margin-top: 30px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    position: relative;
+    left: 25px;
+    border: #A0B8E6 2px solid;
+    background-color: #fefefe;
+    padding: 15px;
+    color: #828282;
+}
+
+
+.task-description{
+    width: 376px; 
+    height: 65px; 
+    resize: none; 
+    margin-top: 30px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    position: relative;
+    left: 25px;
+    border: #A0B8E6 2px solid;
+    background-color: #fefefe;
+    padding: 15px;
+    color: #828282;
+}
+
+.admin-subtasks{
+    position: relative;
+    left: 25px;
+    height: 300px;
+    width: 390px;
+    border: #A0B8E6 2px solid;
+    background-color: white;
+    padding: 8px;
+    color: #828282;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    overflow-y: auto;
+    font-weight: 300;
+}
+
+.task-popup-left{
+    width: 460px;
+    height: 625px;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    right: 125px;
+    background-color: white;
+}
+
+.duedate{
+    position: relative;
+    bottom: 595px;
+    left: 167px;
+}
+
+.fa-calendar{
+    padding-right: 7px;
+}
+
+.admin-duedate-btn{
+    position: relative;
+    background-color: transparent;
+    border: none;
+    border-radius: 6px;
+    font-size: 14.5px;
+    color: #5d8771;
+}
+
+.admin-duedate-btn:hover{
+    background-color: #ededed;
+}
+
+.priority-div {
+    position: relative;
+    bottom: 430px;
+    left: 220px;
+}
+
+.priority-icons input[type="radio"] {
+    display: none;
+}
+
+.priority-icons label {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.priority-icons i {
+    font-size: 14px;
+    color: #ccc; 
+    margin-left: 15px;
+}
+
+.priority-icons label input[type="radio"][value="high"]:checked + i {
+    color: #ff0000;
+}
+
+.priority-icons label input[type="radio"][value="medium"]:checked + i {
+    color: #ff8133;
+}
+
+.priority-icons label input[type="radio"][value="low"]:checked + i {
+    color: #2656b0;
+}
+
+
+.task-assignment-div{
+    position: relative;
+    bottom: 620px;
+    left: 230px;
+}
+
+.popup-section-title{
+    font-size: 15px;
+    font-weight: 570;
+}
+
+.popup-section-title-subtask{
+    font-size: 15px;
+    font-weight: 570;
+    position: relative;
+    left: 27px;
+}
+
+
+.delete-task-btn{
+    position: relative;
+    bottom: 410px;
+    border-radius: 6px;
+    left: 290px;
+    border: none;
+    color: red;
+    background-color: transparent;
+}
+
+.delete-task-btn:hover{
+    background-color: #ededed;
+}
+
+
+.important-div{
+    position: relative;
+    bottom: 840px;
+    left: 325px;
+}
+
+.important-div input[type="radio"] {
+    display: none;
+}
+
+
+.important-div label {
+    cursor: pointer;
+}
+
+.important-div label i {
+    font-size: 16px; 
+    color: #bebebe;
+}
+
+
+.important-div input[type="radio"]:checked + label i {
+    color: rgb(225, 225, 44);
+}
+
+.save-task-btn{
+    position: relative;
+    bottom: 385px;
+    left: 165px;
+    border-radius: 4px;
+    width: 60px;
+    padding: 5px;
+    color: white;
+    border: none;
+    background-color: #242d3d;
+}
+
+
+.container{
+    position: relative;
+    top: 140px;
+}
+
+.create-team-form {
+    max-width: 300px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.create-team-form .team-name-container {
+    margin-bottom: 20px;
+}
+
+.create-team-form .team-name-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.create-team-btn{
+    position: relative;
+    bottom: 27px;
+}
+
+.team-tasks-p{
+    font-size: 16px;
+    color: #A0B8E6;
+    text-align: left;
+    position: relative;
+    left: 350px;
+    top: 110px;
+}
+
+
+#date-picker-container {
+    position: relative;
+    left: 20px;
+}
+
+#due-date {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14.5px;
+    color: #5d8771;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#due-date:hover {
+    background-color: #ededed;
+}
+
+.duedate-title{
+    position: relative;
+    left: 25px;
+}
+
+
+.team-members {
+    width: 1100px;
+    margin: 140px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-member-list {
+    width: 800px;
+    height: 400px;
+    max-height: 500px;
+    padding: 20px;
+    position: relative;
+    left: 25px;
+    overflow-y: auto;
+}
+
+.team-member {
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,.12);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.04);
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-member p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.remove-member-btn {
+    background-color: #ededed;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.remove-member-btn:hover {
+    background-color: #dedede;
+}
+
+#add-team-member-form {
+    margin-top: 20px;
+    position: relative;
+    bottom: 450px;
+    left: 560px;
+}
+
+.input-member {
+    width: 220px;
+    padding: 8px;
+    border: 2px solid #A0B8E6;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.add-member-btn {
+    background-color: #3368CE;
+    color: white;
+    border: none;
+    padding: 4px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.add-member-btn:hover {
+    background-color: #1c53b8;
+}
+
+
+.team-member-name{
+    font-weight: 550;
+}
+
+
+.subtask-input{
+    width: 150px;
+    height: 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px #aaaaaa solid;
+    border-radius: 0;
+    outline: none;
+    position: relative;
+    bottom: 50px;
+    background-color: transparent;
+
+    transition: border-bottom 150ms ease in;
+}
+
+.subtask-input:focus{
+    border-bottom-width: 2px ;
+}
+
+.subtask-input:focus::placeholder{
+    opacity: 0.2;
+}
+
+.add-subtask-btn{
+    position: relative;
+    font-size: 20px;
+    bottom: 50px;
+    right: 205px;
+    border: none;
+    border-radius: 5px;
+    background: transparent;
+}
+
+.add-subtask-form{
+    position: relative;
+    bottom: 445px;
+    left: 260px;
+
+}
+
+.add-new-task-individual{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #3369cee6;
+    border: none;
+    position: absolute;
+    left: 1330px;
+    top: 680px;
+    font-size: 33px;
+    color: white;
+}
+
+
+.list-name{
+    font-size: 17px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    color: black;
+    border-radius: 0;
+    border-bottom: none;
+    width: 230px;
+    outline: none;
+    background-color: transparent;
+
+    transition: border-bottom 150ms ease in;
+}
+
+
+.list-name:focus{
+    border-bottom-width: 2px ;
+}
+
+.list-name:focus::placeholder{
+    opacity: 0.2;
+}
+
+.create-list-btn{
+    position: relative;
+    font-size: 28px;
+    bottom: 60px;
+    right: 140px;
+    border: none;
+    border-radius: 5px;
+    background: transparent;
+}
+
+
+.list-name-form{
+    position: relative;
+    top: 30px;
+    right: 357px;
+    padding-bottom: 20px;
+}
+
+
+@media (min-width:900px){
+    body{
+        height: 100vh;
+        overflow: none;
+        width: auto;
+    }
+
+    header{
+        margin-top: 15px;
+    }
+
+    a.logo img {
+        width: 275px;
+        height: auto;
+        padding-left: 50px;
+        padding-top: 30px;
+    }
+
+    .info{
+        margin-top: 110px;
+        margin-left: 50px;
+        margin-right:50px;
+        
+    }
+}
